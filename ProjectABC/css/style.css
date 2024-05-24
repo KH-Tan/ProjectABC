@@ -1,9 +1,70 @@
 
+/* Box Model */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Box Model - always include above */
+
+
 body {
-  background-color: beige;
+  background-color: paleturquoise;
+  color: black;
+  text-align: center;
+  font-size: 1.25rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+header {
+  background-color: green;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1em
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
 }
 
 p {
-  color: blue;
+  color: purple;
 }
 
+a {
+  color: inherit;
+}
+
+/* classes */
+.linkPage {
+  color: orange;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: right; 
+}
+
+.columns2 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+section {
+  background-color: sandybrown;
+  border-radius: 0.5rem;
+  box-shadow: 2.rem 3.75rem 3rem;
+}
+
+article {
+  background-color: gray;
+}
+
+/* ids */
+#top, #bottom {
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: left; 
+}
